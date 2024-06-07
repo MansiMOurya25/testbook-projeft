@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <!-- firstly we divided html in three parts first is home page where I added name iinput and category section in which we choosed one category to solve that part subject ' question   -->
+    <!-- second is quiz part section where we watched question one by one and we will select ans and save and get score -->
+    <!-- then third part in which section we will watch our result of quiz  -->
+    
+    <!-- home page start html -->
+
+
+    <div class="container">
+        <img src="testbookimg.jpg" alt="">
+        <h1 class="heading">Hello User!</h1>
+        <p class="para">Enter Your name to continue the Quiz</p>
+
+        <input type="text" class="name" placeholder="Enter Your Name">
+        <button class="enter">Enter</button>
+        <p class="para2">You'll have 10 seconds to answer each question</p>
+        <hr>
+        <h1 class="heading2">
+            Select Category
+        </h1>
+        <div class="cate">
+<!-- starts category section -->
+            <button class="choose" id="html"> HTML </button>
+            <button class="choose" id="css"> CSS </button>
+            <button class="choose" id="js"> Java Script </button>
+            <button class="choose" id="dsa"> DSA</button>
+        </div>
+    </div>
+    <!-- quiz . started................................................. -->
+    <div class="display-container">
+        <h1 class="headQ">html</h1>
+        <div class="timer-box">
+            <div class="timer"> <span id="time-left">220</span></div>
+            <div class="score">Score</div>
+        </div>
+
+        <div class="ques-div">
+            <div class="circle"> <span id="no-of-question">4/10</span></div>
+            <p class="ques">there are some question please find it?</p>
+        </div>
+        <div class="option-div">
+            <!-- <button class="ops ops1">a</button>
+    <button class="ops ops2">b</button>
+    <button class="ops ops3" >c</button>
+    <button class="ops  ops4" >d</button> -->
+        </div>
+        <button class="next">next question</button>
+    </div>
+    <!-- result page starts from here ...................................... -->
+     <div class="quiz-result">
+        <h1 class="head-result">Quiz Result</h1>
+        <p class="result-name"></span>your result is </p>
+        <p class="total">Total Question:10</p>
+        <p class="attempt"> Attempt:10</p>
+        <p class="correctE"> Correct:</p>
+        <p class="wrong">Wrong:<span id="wrong"></span></p>
+        <p class="percentage">Percentage:<span class="percentage"></span></p>
+        <div class="button-last">
+            <button class="start">Start Again</button>
+            <button class="goback">Go To Home</button>
+        </div>
+    </div>
+
+
+    <script src="quiz.js"></script>
+    <script src="jsQuestion.js"></script>
+    <script src="dsaQuestion.js"></script>
+    <script src="cssQuestion.js"></script>
+</body> 
+
+</html>

@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+
+/* home page 'css starts from here  . we changed background and gave margin and padding width height and text align */
+body{
+    margin: 0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: white;
+}
+
+.container{
+    max-width:600px;
+margin: 70px auto;
+padding:10px;
+text-align: center;
+font-size: 10px;
+border: 1px solid rgb(199, 186, 186);
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+/*  related to img css */
+img{
+    height:100px;
+    width:100px ;
+    text-align: center;
+}
+.heading{
+/* background-color: brown; */
+color: #00bfff;
+font-weight: 700;
+text-align: center;
+font-size: 30px;
+margin: 7px;
+}
+.para{
+font-size: 15px;
+font-weight: 800;
+font-family:Arial, Helvetica, sans-serif;
+text-align: center;
+margin:8px;
+
+} 
+.name{
+padding: 10px 40px;
+width: 70%;
+height: 40px;
+/* max-width: 000px; */
+font-size: 15px;
+border-radius: 9px;
+border: 1px solid gray;
+box-shadow: 10px ,20px 10px rgba(0, 0, 0, 0.9);
+margin:4px;
+text-align: center;
+} 
+/* to hover change css */
+.enter{
+background-color: #00bfff;
+color: white;
+font-size: 20px;
+width: 100px;
+height:40px;
+border: none;
+border-radius: 10px;
+margin:2px;
+padding: 2px;
+}
+.enter:hover{
+        background: #4a82f4fe;
+    }
+.para2{
+font-size:13px;
+color:gray;
+font-weight: 400;
+text-align: center;
+padding: 4px;
+margin: 8px;
+}
+.heading2{
+    color: #00bfff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    margin: 7px;
+    }
+
+.cate{
+display: grid;
+grid-template-columns: repeat(2 ,1fr);
+gap: 10px;
+margin: 2px;
+padding: 5px;
+}
+ .cate button{
+background-color: rgb(217, 237, 245);
+border: 1px solid rgb(71, 188, 218);
+padding: 5px;
+border-radius: 7px;
+margin: 4px;
+font-size: 20px;
+color: gray;
+font-weight:400 ;
+}
+.cate button:hover{
+    background: #59c4f9fe;
+}
+
+/* quiz page 'css start from here ...... */
+.display-container{
+    max-width:600px;
+    margin: 120px auto;
+    padding:20px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid rgb(199, 186, 186);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+display: none;
+}
+ /* to give color and font size and text align property in heading */
+
+
+.headQ{
+    color:Gray;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif  ;
+    margin: 7px;
+}
+.timer-box{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 4px 2px;
+
+}
+.timer{
+    /* background-color: red; */
+    padding: 4px;
+    border: 2px solid #00bfff;
+    border-radius: 50%;
+    margin:0 4px;
+}
+.time{
+    font-size: 12px;
+    color: #00bfff;
+    font-weight: 700;
+}
+#time-left{
+    color: #00bfff;
+}
+.score{
+font-size: 20px;
+font-weight: 400;
+color: gray;
+}
+.ques-div{
+background-color: aliceblue;
+max-width: 650px;
+height:15vh;
+border: 1px solid rgb(118, 197, 236);
+border-radius: 5px ;
+margin:6px 2px 10px 2px;
+padding: 6px;
+box-shadow: 0 ,10px ,10px rgba(53, 152, 214, 0.8);
+position: relative;
+}
+.circle{
+    padding: 2px 0;
+    border: 2px solid #00bfff;
+    border-radius: 50%;
+    margin:0 4px;
+    background-color: rgb(235, 239, 239);
+width: 40px;
+height: 20px;
+position: absolute;
+top:-10px;
+left:48%
+}
+
+.ques{
+font-size: 13px;
+font-weight: 400;
+color: rgb(23, 7, 7);
+}
+.option-div{
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+gap:10px;
+}
+
+.ops{
+background-color: azure;
+padding:5px;
+margin: 6px;
+color: #00bfff;
+    border: 2px solid #00bfff;
+border-radius: 10px;
+}
+.ops:hover :not([disabled]){
+    background-color:#00bfff;
+    color: white;
+}
+/* .ops:disabled{
+    cursor: no-drop;
+}  */
+.next{
+    background-color: rgb(45, 177, 253);
+    padding:10px 15px;
+    margin: 7px;
+    color: white;
+        /* border: 2px solid #2139f1; */
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+
+    } 
+    /*add some hover css  */
+    .next:hover{
+        background-color:#3c55f6;
+        color: white;
+    }  
+
+/*result 'css starts from here................... */
+
+.quiz-result{
+    max-width:600px;
+    margin: 130px auto;
+    padding:10px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid rgb(199, 186, 186);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.head-result{
+    color: #00bfff;
+    font-size: 30px;
+    text-align: center;
+    margin: 4px;
+}
+
+.quiz-result p{
+color: rgb(51, 40, 40);
+font-size: 11px;
+font-weight: 600;
+text-align: center;
+margin: 12px;
+}
+.button-last{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+}
+
+.button-last button{
+    background-color: rgb(45, 177, 253);
+    padding:10px 15px;
+    margin: 6px;
+    color: white;
+        /* border: 2px solid #2139f1; */
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+}
+
+
+.button-last button:hover{
+    background-color:#3c55f6;
+    color: white;
+}  
+
+.correct{
+    background: #9aeabc;
+}
+  .incorrect{
+    background: #ff9393;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+/* here we used font family import link to add those font-family  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+/* used some property in universe selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* to add background in body element and some related property */
+
+body {
+    background: url(bg2\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+}
+/* nav'css starts from here......... */
+/* to fix navbar used position fix on top 0 . */
+nav {
+    background-color: rgb(7, 8, 7);
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    z-index: 10;
+}
+ /* to use float property in nav-left */
+ /* we divided navbar in two part right and left */
+
+nav .nav-bar .nav-left i {
+    float: left;
+    margin: 1rem 0.8rem 0.4rem 1rem !important;
+    width: 1rem;
+}
+/* to use green color in sign up's background submit input */
+nav .nav-bar input {
+    background-color: rgb(4, 152, 4);
+    color: black;
+}
+/* used flex display to set navbar properly */
+nav .nav-bar {
+    display: flex;
+    flex-direction: row;
+
+    gap: 0.2rem;
+    justify-content: space-between;
+    /* position: relative; */
+}
+/* in rightside navbar again we used fix display.... */
+nav .nav-right ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* margin-right: rem; */
+    position: relative;
+     justify-content: flex-end;
+    align-items:flex-end;
+    padding: 1.2rem;
+    font-size:small;
+}
+/* to add green background color in follow input*/
+ .nav-bar .follow{
+    color: white;
+    background-color: rgb(4, 192, 4);
+    cursor: pointer;
+    font-size: smaller;
+ }
+.nav-right .green {
+    padding: 0.5rem;
+    background-color: rgb(11, 173, 11);
+    color: black;
+}
+/* used hover to change bgcolor  */
+.nav-bar  li :hover{
+    background-color: rgb(62, 61, 61);
+    padding: 0.5rem;
+}
+/* to remove default proprty in anchor and li tag thats why used none */
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+/* ....navbar'css ended............ */
+/* main section 'css starts form here.......... */
+main .main-page h1 {
+color: white;
+font-style: bold;
+text-align: center;
+cursor:  context-menu;
+padding-top :1rem;
+font-size: 2rem;
+margin-top:3rem ;
+}
+/* here we used some font-text formate related property in h1 and paragraph*/
+main .main-page p{
+    color: white;
+    /* font-style: bold; */
+    text-align: center;
+    cursor:  context-menu;
+    margin :0.6rem 8rem;
+    word-spacing:0.2rem ;
+    letter-spacing:0.06rem ;
+    font-size: 0.9rem;
+}
+/* form'css starts from here....... */
+main .form-page{
+    width:60vw;
+    /* height: 100vh; */
+   position: relative;
+   left:23vw;
+    background-color: rgb(35, 35, 61);
+    padding: 2.6rem;
+    z-index: 0;
+}
+/* used some property to set label properly */
+main .form-page label {
+     margin:1rem 0.5rem 0.5rem 0.2rem;
+     text-align: left;
+     color: white;
+     font-weight: bold;
+     letter-spacing: 0.1rem;
+}
+/* used property in input-field.........  */
+main .form-page input {
+    /* margin:0.5rem 0.5rem 0.5rem 0.5rem; */
+    width: 98%;
+    height: 7%;
+    padding: 0.2rem 0;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+/* css in select element */
+main .form-page select {
+    margin:0.1rem 0.5rem 0.5rem 0.2rem;
+    width: 98%;
+    height: 7%;
+    padding: 0.4rem 0;
+    text-align: left;
+    color:gray;
+    font-weight: bold;
+
+}
+/* here we used  some property in separate input radio type */
+main .form-page input[type="radio"] {
+    position: relative;
+    right:26vw;
+    top:1.3rem;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+/* here we used  some property in separate input checkbox type */
+main .form-page input[type="checkbox"] {
+    position: relative;
+    right:26vw;
+    top:1.3rem;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+/* used css for textarea  */
+main .form-page textarea{
+    width: 95%;
+    height: 9%;
+    margin:0.5rem 0 1rem 0;
+}
+/* here we used  some property in separate input submit type */
+main input[type="submit"]{
+    background-color: rgba(5, 192, 5, 0.854);
+    color:white;
+    text-align: center;
+    padding: 0.4rem 0;
+
+}
+/* form css ended............... */
+/* ..................css ended.......................... */
+
+
+
+
+
+

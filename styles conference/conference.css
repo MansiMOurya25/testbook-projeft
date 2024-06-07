@@ -1,0 +1,182 @@
+/* added font family in my css */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,50;0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+/* added some  property in every element */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* used background color in body  and appied  related font family*/
+body{
+    background-color: #243746;
+    color: #888;
+    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+/* here used display flex to create navbar */
+nav .nav-bar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /* align-items: self-end; */
+    }
+    /* added some property in both side navbar . because i divide navbar in two part right and left */
+    .nav-bar .left-side h1{
+            font-family: 'Montserrat';
+            font-size: 2.7rem;
+            color:white;
+            font-weight: 100;
+            margin:0 5rem;
+            cursor: pointer;
+        }
+    .nav-bar .left-side .top{
+        font-family: 'Montserrat';
+        font-size: 2.7rem;
+        color:white;
+        font-weight: 100;
+        padding-top: 3rem;
+        margin:0 5rem;
+    } 
+    /* used flex displat to set anchor tag in right navbar */
+nav .right-down ul{
+    display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     gap: 1rem;
+     margin: 1rem 8rem 1rem auto ;
+     font-size: 1rem;
+     font-weight: 100;
+}
+/* used none property to remove default property from anchor and list items */
+nav .right-down li{
+    list-style-type: none;
+}
+ nav .right-down li a {
+     text-decoration: none;
+     color:white;
+     
+ }
+ nav .right-side p{
+    color:rgb(112, 160, 145);
+    margin:4rem  4rem 1rem auto ;
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-family: 'Montserrat';
+ }
+/* navbar'css ended..................... */
+/* css of main starts from here */
+/* here we gave font family to h2 tag and paragraph tag .added some property on them */
+ main h2{
+    font-family: 'Montserrat';
+    margin:3rem 6rem 2rem 6rem;
+    color:rgb(112, 160, 145);
+    font-size: 2.4rem;
+    font-weight: 100;
+    text-align: center;
+ }
+ main p{
+color:hsl(0, 4%, 85%);
+margin:0rem 5rem 2rem 5rem;
+font-family: 'Montserrat';
+font-weight: 100;
+font-size: 1.6rem;
+text-align: center;
+ }
+ /* added some css on submit type input */
+main input[type="submit"]{
+    background-color: #243746;
+    color: white;
+    border: 2px solid rgb(209, 196, 196); 
+    padding: 1.4rem 2rem;
+    position: relative;
+    left: 45vw;
+    margin:1.5rem 0 3rem 0;
+    cursor: pointer;
+}
+/*  used hover property to create responsive webpage */
+main input[type="submit"]:hover{
+background-color: aliceblue;
+color:#888
+}
+/* here we used grid property to set some different types element in that formate  which you used in your page */
+main .image{ 
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+ grid-template-rows:0.5fr 3fr 0.5fr 1fr;
+    padding:2rem 10rem 2rem 10rem;
+    gap:0;
+    overflow: hidden;
+} 
+/* added css in image,h4,h3 element  which is inside the grid-box */
+main .image img{
+      width:90%;
+      height: 85%;
+      border-radius: 3%;
+      cursor: pointer;
+
+}
+main .image h4{
+    color:rgb(160, 158, 158);
+    text-align: left !important;
+    position: relative;
+    padding: 1rem 0;
+    font-size: small;
+    font-weight: 500;
+    top:0.5rem;
+
+}
+main .image h3{
+    color:gray;
+    text-align: left !important;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    margin:o.5rem 0 3rem 0;
+    cursor: pointer;
+}
+main .image .last-grid{
+    color:gray;
+    padding: 0 1rem ;
+    text-align: left;
+    position: relative;
+    right:1rem;
+    font-weight: 100;}
+/* main'css ended .......... */
+/* footer'css starts from here...................... */
+/* used display flex to set div in footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100vw;
+    height:16vh;
+}
+.footer .left-copyright{
+    position: relative;
+    left:9rem;
+    top:3.5rem;
+     color:rgb(79, 113, 102);
+} 
+/* again used flex to set inside anchor tag in footer */
+.footer .right-foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: center; */
+    gap:1rem;
+    position: relative;
+    top:3.5rem;
+    right:8.2rem;
+}
+/* to remove default property from li and anchor tag . used none property */
+.footer .right-foot ul li {
+    list-style-type: none;
+}
+.footer .right-foot ul li a{
+    text-decoration: none;
+    color:white;
+   font-family:'Montserrat';
+   font-size: small;
+   font-weight: 200;
+}
+/* css ended............................................. */
